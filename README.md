@@ -243,26 +243,56 @@ classDiagram
 ### Prerequisites
 * Java Development Kit (JDK 11 or higher recommended, tested on JDK 17).
 
-### Compilation
-From the project root directory, compile all Java source files into a dedicated `bin` directory:
+### Method 1: Quick Terminal Run (No extra folder needed)
+From the project root directory:
+
 ```bash
-javac -d bin src/*.java
+# 1. Compile all Java files directly
+javac src/*.java
+
+# 2. Run the GUI application
+java -cp src PawsAndStaysGUI
 ```
 
-### Execution
-Run the GUI application with:
+### Method 2: Clean Build into a `bin` Directory
+If you want to keep compiled `.class` files separated from source code:
+
 ```bash
+# 1. Create the bin folder
+mkdir bin
+
+# 2. Compile source files into bin
+javac -d bin src/*.java
+
+# 3. Run the GUI application
 java -cp bin PawsAndStaysGUI
 ```
+
+### Method 3: Running via IDE (VS Code, IntelliJ IDEA, Eclipse)
+1. Open the project root folder in your IDE.
+2. Navigate to `src/PawsAndStaysGUI.java`.
+3. Click the **Run** button (or press `Shift + F10` in IntelliJ / `F5` in VS Code).
 
 ---
 
 ## 6. Group Project Contributors
 
-* **Team Member 1:** [Name / Student ID] - Role & Core Contributions
-* **Team Member 2:** [Name / Student ID] - Role & Core Contributions
-* **Team Member 3:** [Name / Student ID] - Role & Core Contributions
-* **Team Member 4:** [Name / Student ID] - Role & Core Contributions
+* **[Faisal Bin Ali](https://github.com/imfaisal-adil)** - Project Lead: Full-Stack Architecture, Core Logic & GUI Integration
+  * Spearheaded end-to-end system development, connecting the Object-Oriented backend with an interactive Java Swing dashboard (`PawsAndStaysGUI`).
+  * Co-engineered core business logic and automated billing calculations (hourly daycare rates, multi-night boarding fees, and medical surcharges).
+  * Implemented dynamic form switching via `CardLayout` that updates input fields and Pet ID prefixes (`D-102`, `B-202`, `S-302`) based on the selected pet service.
+  * Designed robust error-handling barriers, catching custom exceptions (`InvalidOperationException`) and domain validation errors to display safe alert dialogs.
+  * Built the visual design system (`DESIGN.md`) and native image asset pipeline for smooth icon rendering.
+
+* **[Sayra Jahan](https://github.com/sayrajahan)** - System Architect: OOP Modeling & UML Specifications
+  * Formulated the 3-level class inheritance hierarchy (`Pet` -> `BoardingPet` -> `SpecialBoardingPet`).
+  * Engineered core abstraction contracts, interface specifications (`Trackable`), and multilevel method chaining (`super.describeCare()`).
+  * Authored the comprehensive architectural design specifications and formal Mermaid UML class diagrams (`UML.md`).
+
+* **[Saibi](https://github.com/syrus11-cse)** - Core Logic Engineer: Business Rules & Collections Management
+  * Engineered the central controller (`PetCareCenter`) leveraging the Java Collections Framework (`ArrayList<Pet>` and `HashMap<String, Pet>`).
+  * Formulated core business logic, capacity thresholds, room conflict detection, and rate calculation algorithms.
+  * Designed custom checked exception handling (`InvalidOperationException`) and polymorphic live telemetry aggregation.
 
 ---
 
