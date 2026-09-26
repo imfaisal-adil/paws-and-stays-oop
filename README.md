@@ -284,12 +284,12 @@ java -cp bin PawsAndStaysGUI
   * Designed robust error-handling barriers, catching custom exceptions (`InvalidOperationException`) and domain validation errors to display safe alert dialogs.
   * Built the visual design system (`DESIGN.md`) and native image asset pipeline for smooth icon rendering.
 
-* **[Sayra Jahan](https://github.com/sayrajahan)** - System Architect: OOP Modeling & UML Specifications
+* **[Sayra Jahan Adiba](https://github.com/sayrajahan)** - System Architect: OOP Modeling & UML Specifications
   * Formulated the 3-level class inheritance hierarchy (`Pet` -> `BoardingPet` -> `SpecialBoardingPet`).
   * Engineered core abstraction contracts, interface specifications (`Trackable`), and multilevel method chaining (`super.describeCare()`).
   * Authored the comprehensive architectural design specifications and formal Mermaid UML class diagrams (`UML.md`).
 
-* **[Saibi](https://github.com/syrus11-cse)** - Core Logic Engineer: Business Rules & Collections Management
+* **[Shafiq Uddin Khan (Saibi)](https://github.com/syrus11-cse)** - Core Logic Engineer: Business Rules & Collections Management
   * Engineered the central controller (`PetCareCenter`) leveraging the Java Collections Framework (`ArrayList<Pet>` and `HashMap<String, Pet>`).
   * Formulated core business logic, capacity thresholds, room conflict detection, and rate calculation algorithms.
   * Designed custom checked exception handling (`InvalidOperationException`) and polymorphic live telemetry aggregation.
