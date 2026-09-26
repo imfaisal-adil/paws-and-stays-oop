@@ -1,0 +1,21 @@
+# Compiled Java class files
+*.class
+
+# Build directory
+bin/
+out/
+
+# Package Files
+*.pdf
+*.jar
+*.war
+*.zip
+*.tar.gz
+
+# IDE specific files
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
